@@ -10,3 +10,7 @@ end
 $lambdaLogger.log(Dir.entries('.').to_s)
 require 'rspec/core'
 RSpec::Core::Runner.run ['spec']
+
+require 'more_code'
+
+$lambdaLogger.log "HEYA MATE!: #{MoreCode.new.do_some_k00l_stuff}"
