@@ -19,6 +19,7 @@ public class JRubyHandlerWrapper {
     ScriptingContainer jrubyScriptingContainer = new ScriptingContainer();
     jrubyScriptingContainer.put("$lambdaInputMap", lambdaInputMap);
     jrubyScriptingContainer.put("$lambdaLogger", lambdaContext.getLogger());
+    jrubyScriptingContainer.put("$lambdaContext", lambdaContext);
 
     // uploaded zip is extracted to /var/task directory
     jrubyScriptingContainer.setCurrentDirectory("/var/task");

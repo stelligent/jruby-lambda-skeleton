@@ -8,7 +8,7 @@
 <artifactId>jruby-lambda-skeleton</artifactId>
 <version>1.0.0-SNAPSHOT</version>
 
-<name>emailme</name>
+<name>jruby-lambda-skeleton</name>
 <repositories>
   <repository>
     <id>rubygems-releases</id>
@@ -25,7 +25,7 @@
   <dependency>
     <groupId>org.jruby</groupId>
     <artifactId>jruby</artifactId>
-    <version>1.7.19</version>
+    <version>9.0.5.0</version>
   </dependency>
 
   <dependency>
@@ -41,6 +41,20 @@
     <version>3.4.0</version>
     <type>gem</type>
   </dependency>
+
+
+  <!--
+   not gonna happen.  JRuby and this gem don't play well.
+   At the very least, the way JRuby computes module names messes with
+   some of the meta-programming shennanigans
+
+  <dependency>
+    <groupId>rubygems</groupId>
+    <artifactId>awspec</artifactId>
+    <version> 0.30.0</version>
+    <type>gem</type>
+  </dependency>
+  -->
 </dependencies>
 
 <build>
